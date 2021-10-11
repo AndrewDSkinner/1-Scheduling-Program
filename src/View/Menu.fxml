@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="239.0" prefWidth="158.0" style="-fx-background-color: #467ae2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MenuController">
+   <children>
+      <Button fx:id="customerButton" layoutX="49.0" layoutY="56.0" mnemonicParsing="false" onAction="#onCustomerButton" text="Customer" />
+      <Button fx:id="scheduleButton" layoutX="49.0" layoutY="88.0" mnemonicParsing="false" onAction="#onScheduleButton" prefHeight="25.0" prefWidth="67.0" text="Schedule" />
+      <Button fx:id="exitButton" layoutX="49.0" layoutY="153.0" mnemonicParsing="false" onAction="#onLogoutButton" prefHeight="25.0" prefWidth="67.0" text="Logout" />
+      <Button layoutX="49.0" layoutY="120.0" mnemonicParsing="false" onAction="#onReportButton" prefHeight="25.0" prefWidth="67.0" text="Reports" />
+   </children>
+</Pane>

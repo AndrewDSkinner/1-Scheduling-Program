@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="390.0" prefWidth="910.0" style="-fx-background-color: #467ae2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SchedulingController">
+    <TableView fx:id="allAppointmentsTable" layoutX="7.0" layoutY="14.0" prefHeight="219.0" prefWidth="900.0">
+        <columns>
+            <TableColumn fx:id="appointmentIDCol" prefWidth="83.0" text="Appointment ID" />
+            <TableColumn fx:id="titleCol" prefWidth="66.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" text="Description" />
+            <TableColumn fx:id="locationCol" prefWidth="91.0" text="Location" />
+            <TableColumn fx:id="typeCol" prefWidth="94.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="64.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="84.0" text="End" />
+         <TableColumn fx:id="customerCol" prefWidth="97.0" text="Customer ID" />
+         <TableColumn fx:id="userCol" prefWidth="102.0" text="User ID" />
+         <TableColumn fx:id="contactCol" prefWidth="138.0" text="Contact ID" />
+        </columns>
+    </TableView>
+    <ButtonBar layoutX="457.0" layoutY="250.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#onAddButton" text="ADD" underline="true" />
+            <Button mnemonicParsing="false" onAction="#onUpdateButton" text="UPDATE" underline="true" />
+            <Button mnemonicParsing="false" onAction="#onDeleteButton" text="DELETE" underline="true" />
+        </buttons>
+    </ButtonBar>
+    <Button fx:id="exitButton" layoutX="687.0" layoutY="324.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit" underline="true" />
+   <ComboBox fx:id="filterCombo" layoutX="14.0" layoutY="258.0" onAction="#onFilter" prefWidth="150.0" promptText="View . . ." />
+</Pane>

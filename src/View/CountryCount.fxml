@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #467ae2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CountryCountController">
+   <children>
+      <ComboBox fx:id="countryCombo" layoutX="122.0" layoutY="188.0" onAction="#onCountryCombo" prefWidth="150.0" promptText="Choose a Country..." />
+      <TextField fx:id="resultField" editable="false" layoutX="331.0" layoutY="188.0" />
+      <Button layoutX="551.0" layoutY="258.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit" />
+      <Label layoutX="122.0" layoutY="160.0" text="Determine the quantity of customers by country">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

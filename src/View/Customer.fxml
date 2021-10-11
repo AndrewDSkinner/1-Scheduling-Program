@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="390.0" prefWidth="747.0" style="-fx-background-color: #467ae2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.CustomerController">
+    <TableView fx:id="allCustomersTable" layoutX="14.0" layoutY="14.0" prefHeight="219.0" prefWidth="720.0">
+      <columns>
+          <TableColumn fx:id="customerIDCol" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="customerNameCol" prefWidth="113.0" text="Customer Name" />
+          <TableColumn fx:id="addressCol" prefWidth="113.0" text="Address" />
+          <TableColumn fx:id="divisionCol" prefWidth="113.0" text="Division" />
+          <TableColumn fx:id="countryCol" prefWidth="89.0" text="Country" />
+          <TableColumn fx:id="postalCol" prefWidth="113.0" text="Postal Code" />
+          <TableColumn fx:id="phoneCol" prefWidth="103.0" text="Phone" />
+      </columns>
+    </TableView>
+    <ButtonBar layoutX="457.0" layoutY="250.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+          <Button mnemonicParsing="false" onAction="#onAddButton" text="ADD" underline="true" />
+          <Button mnemonicParsing="false" onAction="#onUpdateButton" text="UPDATE" underline="true" />
+          <Button mnemonicParsing="false" onAction="#onDeleteButton" text="DELETE" underline="true" />
+      </buttons>
+    </ButtonBar>
+    <Button fx:id="exitButton" layoutX="687.0" layoutY="324.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit" underline="true" />
+</Pane>
